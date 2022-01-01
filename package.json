@@ -1,0 +1,26 @@
+{
+  "name": "pinia-example-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "eval $(grep '^NUXT_HOST' .env.production) $(grep '^NUXT_PORT' .env.production) node .output/server/index.mjs",
+    "test": "cypress run -b firefox",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.1.8",
+    "@vueuse/core": "^7.4.1",
+    "core-js": "^3.20.1",
+    "nuxt-edge": "latest",
+    "pinia": "^2.0.9"
+  },
+  "devDependencies": {
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge",
+    "@nuxt/types": "^2.15.8",
+    "cypress": "^9.2.0",
+    "nuxt-windicss": "^2.2.2"
+  }
+}
